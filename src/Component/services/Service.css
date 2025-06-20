@@ -1,0 +1,140 @@
+.service-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+} 
+.servip{
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.reverse .feature-image-container {
+    justify-content: flex-end;
+}
+.rsc{
+    font-size: 25px;
+    font-family: 'Lexend';
+    
+    color: blue;
+}
+.sw{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Lexend';
+
+
+}
+
+.feature-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}
+
+.feature-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.features-heading {
+    color: #0197B0;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    font-size: 45px;
+    font-family: 'Lexend';
+
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-text {
+    font-size: 25px;
+    font-family: 'Lexend';
+
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.feature-Cost{
+    font-size: 28px;
+    font-family: 'Lexend';
+
+
+}
+
+.feature-subtitles span {
+    font-size: 25px;
+    font-family: 'Lexend';
+
+    color: blue;
+}
+
+.feature-image-container {
+    flex: 1;
+    min-width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* Aligns the image to the start */
+
+}
+
+.feature-image {
+    max-width: 70%;
+    align-items: flex-start;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .reverse {
+        flex-direction: column;
+    }.feature-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .feature-content {
+        order: 2;
+    }
+    
+    .feature-image-container {
+        order: 1;
+    }
+    .reverse .feature-image-container {
+        justify-content: center; /* Ensures image is centered in reverse layout */
+    }
+    
+    .features-heading {
+        font-size: 28px;
+    }
+    
+    .feature-title {
+        font-size: 22px;
+    }
+}
